@@ -1,0 +1,27 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "budibase-toggle",
+    "friendlyName": "budibase-toggle",
+    "description": "An amazing Budibase component!",
+    "icon": "Text",
+    "settings": [
+      {
+        "type": "text",
+        "key": "inactiveColor",
+        "label": "Inactive Color"
+      },
+      {
+        "type": "text",
+        "key": "activeColor",
+        "label": "Active Color"
+      },
+      {
+        "type": "text",
+        "key": "accentColor",
+        "label": "Accent Color"
+      }
+    ]
+  }
+}
