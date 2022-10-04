@@ -1,8 +1,8 @@
 # Budibase-toggle
 This is a readme for your new Budibase plugin.
 
-# This component allows user to input hex code color to modify Inactive/Active/Accent Color.
-<img width="1696" alt="Screenshot 2022-10-04 at 01 01 48" src="https://user-images.githubusercontent.com/57537261/193706708-81b8beb5-794b-4668-8c6d-af88cfa509b0.png">
+# This toggle component allows user select custom Inactive/Active/Accent Color.
+![toggle](https://user-images.githubusercontent.com/57537261/193949729-4218af33-e9eb-4b09-812a-7654c61f9e18.gif)
 
 
 # Description
