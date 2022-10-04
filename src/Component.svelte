@@ -3,23 +3,11 @@
 
   const { styleable } = getContext("sdk")
   const component = getContext("component")
-  export let inactiveColor = '#e0e0e0';
-  export let activeColor = '#424242';
-  export let accentColor = '#f1f4fc';
+  export let inactiveColor;
+  export let activeColor;
+  export let accentColor;
 
   let isActive = false;
-
-  $: {
-    if (!inactiveColor) {
-      inactiveColor = '#9e9e9e';
-    }
-    if (!activeColor) {
-      activeColor = '#424242';
-    }
-    if (!accentColor) {
-      accentColor = '#f1f4fc';
-    }
-  }
 
   const handleButtonClick = () => {
     isActive = !isActive;

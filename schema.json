@@ -8,19 +8,22 @@
     "icon": "Text",
     "settings": [
       {
-        "type": "text",
+        "type": "color",
         "key": "inactiveColor",
-        "label": "Inactive Color"
+        "label": "Inactive Color",
+        "defaultValue": "#e0e0e0"
       },
       {
-        "type": "text",
+        "type": "color",
         "key": "activeColor",
-        "label": "Active Color"
+        "label": "Active Color",
+        "defaultValue": "#424242"
       },
       {
-        "type": "text",
+        "type": "color",
         "key": "accentColor",
-        "label": "Accent Color"
+        "label": "Accent Color",
+        "defaultValue": "#BAC4C6"
       }
     ]
   }
