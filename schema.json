@@ -6,6 +6,7 @@
     "friendlyName": "budibase-toggle",
     "description": "An amazing Budibase component!",
     "icon": "Text",
+    "hasChildren": true,
     "settings": [
       {
         "type": "color",
@@ -24,6 +25,22 @@
         "key": "accentColor",
         "label": "Accent Color",
         "defaultValue": "#BAC4C6"
+      }
+    ],
+    "context": [
+      {
+        "type": "schema"
+      },
+      {
+        "type": "static",
+        "values": [
+          {
+            "label": "Active State",
+            "key": "isActive",
+            "type": "boolean",
+            "defaultValue": false
+          }
+        ]
       }
     ]
   }
