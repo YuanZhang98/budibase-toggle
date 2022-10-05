@@ -1,26 +1,31 @@
 <script>
   import { getContext } from "svelte"
 
-  const { styleable } = getContext("sdk")
+  const { styleable, Provider } = getContext("sdk")
   const component = getContext("component")
   export let inactiveColor;
   export let activeColor;
   export let accentColor;
 
   let isActive = false;
-
+  $: dataContext = {
+    isActive
+  }
   const handleButtonClick = () => {
     isActive = !isActive;
   };
 </script>
 
 <div use:styleable={$component.styles}>
-  <div class="toggle">
-    <div style="background: {isActive ? activeColor : inactiveColor};" class="toggle-button {isActive && 'toggle-button-active'}" on:click={handleButtonClick}>
-      <div style="background: {accentColor};" class="toggle-inner-circle {isActive && 'toggle-inner-circle-active'}">
+  <Provider data={dataContext}>
+    <div class="toggle">
+      <div style="background: {isActive ? activeColor : inactiveColor};" class="toggle-button {isActive && 'toggle-button-active'}" on:click={handleButtonClick}>
+        <div style="background: {accentColor};" class="toggle-inner-circle {isActive && 'toggle-inner-circle-active'}">
+        </div>
       </div>
     </div>
-  </div>
+    <slot />
+  </Provider>
 </div>
 
 <style>
